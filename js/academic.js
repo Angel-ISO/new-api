@@ -1,3 +1,6 @@
+
+
+//primero esperar a que el dom carge con esta funcion flecha.
 document.addEventListener("DOMContentLoaded", ()=>{
     //solo un objeto
     //getStuden()
@@ -5,7 +8,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     //getStudents()
     //api publicada en internet
     //getStudensLive()
-    //tarea: api con async await
+    //tarea: api con async await, api externa
     StudentsNewApi()
     //link api: https://vermenmasterchief.tk/detalleEstudiante.php?api_key=Metallica&id_usuario=idUsuario
 
@@ -141,7 +144,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 //       })
 //   }
 
-
+// mi intento de apis pero con cards (salio mal)
 function StudentsNewApi({id_usuario}){
   const url= `https://vermenmasterchief.tk/detalleEstudiante.php?api_key=Metallica&id_usuario=${id_usuario}`;
   fetch(url)
